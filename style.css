@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background-color: white;
+    font-family: "Roboto Mono";
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: white;
+    transition: all 0.7s;
+    font-size: 150px;
+    font-weight: 700;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .clicked {
+    color:white;
+  }
+  
+  .form,
+  .greetings {
+    display: none;
+  }
+  
+  .showing {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: 0.5s fadeIn linear;
+  }
+  
+  .greetings {
+    font-size: 80px;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  
+  input {
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 3px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  .line {
+    width: 300px;
+    height: 5px;
+    color: white;
+    border: 1px solid white;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  button {
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  li {
+    font-size: 25px;
+  }
+  
+  .js-weather {
+    margin-top: 10px;
+    font-size: 20px;
+    
+  }
